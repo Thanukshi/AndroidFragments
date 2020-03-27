@@ -18,4 +18,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnFra2" />
+
+    <fragment
+        android:id="@+id/fragmentDefault"
+        android:name="com.example.androidfragments.Fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>
