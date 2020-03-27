@@ -18,9 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        frag1 = findViewById(R.id.btnFrag1_main);
-        frag2 = findViewById(R.id.btnFrag2_main);
-
     }
 
     public void changeFragment (View view){
@@ -28,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
 
         if(view == findViewById(R.id.btnFrag1_main)){
             fragment = new Fragment1();
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.fragmentDefault,fragment);
+            ft.commit();
+        }
+
+        if(view == findViewById(R.id.btnFrag2_main)){
+            fragment = new Fragment2();
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.replace(R.id.fragmentDefault,fragment);
