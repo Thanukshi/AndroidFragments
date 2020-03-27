@@ -11,12 +11,14 @@
         android:id="@+id/btnFrag1_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="changeFragment"
         android:text="@string/btnFra1" />
 
     <Button
         android:id="@+id/btnFrag2_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="changeFragment"
         android:text="@string/btnFra2" />
 
     <fragment
